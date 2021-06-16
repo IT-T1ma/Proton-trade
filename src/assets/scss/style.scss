@@ -1,0 +1,25 @@
+@import "vendor/reset.scss";
+@import "_vars.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:wght@400;700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $white;
+    font-size: 1.4rem;
+    color: $color-text;
+}
+
+
+
+
+
+/* Blocks */ 
+@import "blocks/container.scss";
+@import "blocks/main.scss";
+@import "blocks/header.scss";
+@import "blocks/advantages-card.scss";
+@import "blocks/capabilities.scss";
