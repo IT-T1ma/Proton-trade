@@ -1,0 +1,80 @@
+.contact-us {
+        padding-top: 10rem;
+        padding-bottom: 12rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 4.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 5rem;
+        letter-spacing: 0em;
+
+        padding-bottom: 1.6rem;
+    }
+
+    &__descript {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.4rem;
+        letter-spacing: 0em;
+    }
+
+    &__form {
+        width: 66%; 
+    }
+    input {
+        background: #EDEEEF;
+        border: 1px solid #E3E5E6;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    &__name {
+        display: inline-block;
+        height: 6.5rem;
+        width: 37.6rem;
+
+        margin-right: 1.9rem;
+        padding-left: 2.4rem;
+    }
+
+    &__email {
+        height: 6.5rem;
+        width: 37.6rem;
+        padding-left: 2.4rem;
+
+    }
+
+    &__text {
+        margin-top: 2.4rem;
+        height: 16.9rem;
+        width: 77.6rem;
+
+        padding-left: 2.4rem;
+        padding-bottom: 10rem;
+    }
+   
+
+    &__info {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.4rem;
+        letter-spacing: 0em;
+        color:  rgba(128, 128, 128, 1);
+
+        padding-top: 1.2rem;
+        padding-bottom: 2.4rem;
+    }
+
+.signup-button {
+        padding: 1.6rem 6.4rem;
+}
+
+}

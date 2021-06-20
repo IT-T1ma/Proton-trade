@@ -1,0 +1,48 @@
+.you-get {
+        background: $white;
+        padding-top: 5rem ;
+        padding-bottom: 10rem;
+
+    &__content {
+        flex-basis: 43%;
+
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-bottom: 10rem;
+
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+    }
+
+
+    &__heading {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.2rem;
+        line-height: 5rem;
+       
+        padding-bottom: 3.6rem;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 153%;
+        
+        padding-bottom: 1.2rem;
+    }
+
+    &__descript {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+}

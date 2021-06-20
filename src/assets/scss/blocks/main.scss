@@ -1,17 +1,12 @@
 .main-screen{
-    background: url(../../assets/images/bg.png) center/cover no-repeat;
-    height: 100vh;
+        background: url(../../assets/images/bg.png) center/cover no-repeat;
+        height: 100vh;
 
-    &_title {
-        font-weight: bold;
-        font-size: 7.4rem;
-        line-height: 8.8rem;
-        letter-spacing: 0.03em;
-
+    &__title {
         padding-bottom: 5px;
     }
 
-    &_description {
+    &__description {
         font-size: 2rem;
         line-height: 2.4rem;
         letter-spacing: 0.01em;
@@ -19,15 +14,9 @@
         padding-bottom: 62px;
     }
 
-    &__subtitle {
-        font-family: Rubik;
-        font-weight: 300;
-        font-size: 2.2rem;
-        line-height: 2.6rem;
-        letter-spacing: 0.02em;
-
+    &__subtitle {      
         padding: 182px 0 10px 0;
-        }
+    }
 
     &__signup {
         display: flex;
@@ -36,36 +25,19 @@
 
 
     &__statistics {
-        img {
-            width: 3.8rem;
-            height: 2.4rem;
-
-            margin-right: 0.5rem;
-            padding-left: 2.4rem;
-        }
-        p {
-            display: inline-block;
-            font-size: 1.6rem;
-            line-height: 2.4rem;
-            color: #343A40;
-        }
-    }
-}
-
-.signup-button {
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 2.8rem;
-    color: $white;
-    background: #3355FF;
-    border-radius: 4px;
-    border: none;
-    padding: 1.6rem 5rem;
-
-    span {
-        font-size: 1.6rem;
-    }
     img {
-        margin-left: 0.8rem;
+        width: 3.8rem;
+        height: 2.4rem;
+
+        margin-right: 0.5rem;
+        padding-left: 2.4rem;
     }
+    p {
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #343A40;
+    
+    }
+    }   
 }

@@ -360,6 +360,7 @@ body {
     background-color: #fff;
     font-size: 1.4rem;
     color: #343A40;
+    background: #FAFAFA;
 }
 
 /* Blocks */
@@ -374,15 +375,11 @@ body {
     height: 100vh;
 }
 
-.main-screen_title {
-    font-weight: bold;
-    font-size: 7.4rem;
-    line-height: 8.8rem;
-    letter-spacing: 0.03em;
+.main-screen__title {
     padding-bottom: 5px;
 }
 
-.main-screen_description {
+.main-screen__description {
     font-size: 2rem;
     line-height: 2.4rem;
     letter-spacing: 0.01em;
@@ -390,11 +387,6 @@ body {
 }
 
 .main-screen__subtitle {
-    font-family: Rubik;
-    font-weight: 300;
-    font-size: 2.2rem;
-    line-height: 2.6rem;
-    letter-spacing: 0.02em;
     padding: 182px 0 10px 0;
 }
 
@@ -417,25 +409,6 @@ body {
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: #343A40;
-}
-
-.signup-button {
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 2.8rem;
-    color: #fff;
-    background: #3355FF;
-    border-radius: 4px;
-    border: none;
-    padding: 1.6rem 5rem;
-}
-
-.signup-button span {
-    font-size: 1.6rem;
-}
-
-.signup-button img {
-    margin-left: 0.8rem;
 }
 
 .header__wrapper {
@@ -520,17 +493,22 @@ body {
     color: #343A40;
 }
 
+.capabilities {
+    margin-top: 3rem;
+}
+
 .capabilities__heading {
-    font-family: Rubik;
     font-style: normal;
     font-weight: bold;
     font-size: 4.2rem;
     line-height: 5rem;
     color: #343A40;
-    display: inline;
+    -ms-flex-preferred-size: 31.8%;
+    flex-basis: 31.8%;
 }
 
 .capabilities__title {
+    margin-top: -40px;
     font-style: normal;
     font-weight: bold;
     font-size: 1.8rem;
@@ -539,17 +517,37 @@ body {
     color: #343A40;
 }
 
+.capabilities__cards {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 .capabilities__item {
+    box-sizing: border-box;
+    display: inline-block;
     background: #FFFFFF;
     box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    width: 33.333%;
-    margin: 20px;
+    -ms-flex-preferred-size: 32%;
+    flex-basis: 32%;
+    padding: 0 5.6rem 0 4.3rem;
+    margin-bottom: 87px;
 }
 
 .capabilities__img {
     position: relative;
     top: -40px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .capabilities__img img {
@@ -558,12 +556,16 @@ body {
 }
 
 .capabilities__descript {
-    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 1.4rem;
     line-height: 2.1rem;
     color: #343A40;
+    padding-bottom: 2rem;
+}
+
+.capabilities__descript:last-child {
+    padding-bottom: 4rem;
 }
 
 .capabilities__subtitle {
@@ -572,4 +574,259 @@ body {
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: #343A40;
+}
+
+.you-get {
+    background: #fff;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.you-get__content {
+    -ms-flex-preferred-size: 43%;
+    flex-basis: 43%;
+}
+
+.you-get__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.you-get__row:nth-child(2) {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.you-get__heading {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.2rem;
+    line-height: 5rem;
+    padding-bottom: 3.6rem;
+}
+
+.you-get__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 153%;
+    padding-bottom: 1.2rem;
+}
+
+.you-get__descript {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.subtitle {
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.02em;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 7.4rem;
+    line-height: 8.8rem;
+    letter-spacing: 0.03em;
+}
+
+.signup-button {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #fff;
+    background: #3355FF;
+    border-radius: 4px;
+    border: none;
+    padding: 1.6rem 5rem;
+}
+
+.signup-button span {
+    font-size: 1.6rem;
+}
+
+.signup-button img {
+    margin-left: 0.8rem;
+}
+
+.demo {
+    background: linear-gradient(#4867ff, #4867ff), url(../../assets/images/web.png) center/cover no-repeat;
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+.demo__subtitle {
+    color: #fff;
+    padding-top: 9rem;
+}
+
+.demo__title {
+    color: #fff;
+}
+
+.demo__button button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-top: 2rem;
+    margin-bottom: 9rem;
+}
+
+.demo__img {
+    position: absolute;
+    top: -85px;
+    right: 30px;
+}
+
+.partners {
+    padding-top: 16rem;
+    padding-bottom: 5rem;
+    background-color: #fff;
+}
+
+.partners__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.partners__title {
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5rem;
+    letter-spacing: 0em;
+    padding-bottom: 1.6rem;
+}
+
+.partners__descript {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+}
+
+.partners__company {
+    -ms-flex-preferred-size: 66%;
+    flex-basis: 66%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.partners__img {
+    padding-bottom: 6rem;
+}
+
+.contact-us {
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+}
+
+.contact-us__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.contact-us__title {
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5rem;
+    letter-spacing: 0em;
+    padding-bottom: 1.6rem;
+}
+
+.contact-us__descript {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+}
+
+.contact-us__form {
+    width: 66%;
+}
+
+.contact-us input {
+    background: #EDEEEF;
+    border: 1px solid #E3E5E6;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.contact-us__name {
+    display: inline-block;
+    height: 6.5rem;
+    width: 37.6rem;
+    margin-right: 1.9rem;
+    padding-left: 2.4rem;
+}
+
+.contact-us__email {
+    height: 6.5rem;
+    width: 37.6rem;
+    padding-left: 2.4rem;
+}
+
+.contact-us__text {
+    margin-top: 2.4rem;
+    height: 16.9rem;
+    width: 77.6rem;
+    padding-left: 2.4rem;
+    padding-bottom: 10rem;
+}
+
+.contact-us__info {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+    color: gray;
+    padding-top: 1.2rem;
+    padding-bottom: 2.4rem;
+}
+
+.contact-us .signup-button {
+    padding: 1.6rem 6.4rem;
+}
+
+.footer {
+    background: #122791;
+}
+
+.footer__wraper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+    padding: 3.2rem 0;
 }
