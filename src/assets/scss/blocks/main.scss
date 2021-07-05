@@ -3,7 +3,7 @@
         height: 100vh;
 
     &__title {
-        padding-bottom: 5px;
+        padding-bottom: 0.5rem;
     }
 
     &__description {
@@ -11,33 +11,72 @@
         line-height: 2.4rem;
         letter-spacing: 0.01em;
 
-        padding-bottom: 62px;
+        padding-bottom: 6.2rem;
+
+        @include breakpoint($tablet-bp) {
+            padding-bottom: 15rem;
+            
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 1.8rem;
+            
+        }
     }
 
     &__subtitle {      
-        padding: 182px 0 10px 0;
+            padding: 18.2rem 0 1rem 0;
+
+        @include breakpoint($tablet-bp) {
+            padding: 10.2rem 0 1rem 0;
+            
+        }
+    }
+
+    &__button {
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+            
+        }
+        img {
+            @include breakpoint($mobile-bp) {
+                width: 40px;        
+            }
+        }
     }
 
     &__signup {
-        display: flex;
-        align-items: center;
+            display: flex;
+            align-items: center;
+
+        @include breakpoint($tablet-bp) {
+            flex-direction: column;
+            padding: 0 0;
+            width: 100%;
+        }
+
     }
 
 
     &__statistics {
-    img {
-        width: 3.8rem;
-        height: 2.4rem;
+        img {
+            width: 3.8rem;
+            height: 2.4rem;
 
-        margin-right: 0.5rem;
-        padding-left: 2.4rem;
-    }
-    p {
-        display: inline-block;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        color: #343A40;
-    
-    }
+            margin-right: 0.5rem;
+            padding-left: 2.4rem;
+        }
+        p {
+            display: inline-block;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #343A40;
+        
+        }
+
+        @include breakpoint($tablet-bp) {
+            margin-top: 1.2rem;
+            
+        }
     }   
 }

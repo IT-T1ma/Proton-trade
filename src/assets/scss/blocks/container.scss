@@ -1,5 +1,17 @@
 .container {
     max-width: 1175px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.4rem;
+
+    @include breakpoint($laptop-bp) {
+        max-width: 991px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding: 0 1rem;
+    }
 }

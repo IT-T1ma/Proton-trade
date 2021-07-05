@@ -1,11 +1,16 @@
 .header {
-
+    
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0.9rem;
         overflow: hidden;
+
+        @include breakpoint($mobile-bp) {
+            padding: 0.9rem 0;
+            
+        }
     }
 
     &__list {
@@ -20,6 +25,11 @@
         text-decoration: none;
         color: $color-text;
         line-height: 2.1rem;
+
+        @include breakpoint($tablet-bp) {
+            display: none;
+            
+        }
     }
 }
 
@@ -44,6 +54,11 @@
         font-size: 2.7rem;
         font-weight: bold;
         text-transform: uppercase;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 2rem;
+            
+        }
     }
 }
 

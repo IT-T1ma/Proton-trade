@@ -2,22 +2,50 @@
         padding-top: 16rem;
         padding-bottom: 5rem;
         background-color: $white;
+
+        @include breakpoint($laptop-bp) {
+            padding-top: 10rem;
+            padding-bottom: 5rem;
+        }
+
+        @include breakpoint($tablet-bp) {
+            padding-top: 3rem;
+        }
+        @include breakpoint($mobile-bp) {
+            padding-bottom: 0;         
+        }
     &__wrapper {
         display: flex;
         justify-content: space-between;
+
+        @include breakpoint($tablet-bp) {
+            flex-direction: column;
+        }        
     }
 
     &__caption {
+        @include breakpoint($tablet-bp) {
+            flex-basis: 30%;
+            text-align: center;
+        }
+
+        @include breakpoint($tablet-bp) {
+            padding-bottom: 5rem;
+        }
     }
 
     &__title {
-        font-size: 4.2rem;
+        font-size: 4.7rem;
         font-style: normal;
         font-weight: 700;
         line-height: 5rem;
         letter-spacing: 0em;
 
         padding-bottom: 1.6rem;
+    
+        @include breakpoint($mobile-bp) {
+            font-size: 4rem;          
+        }
     }
     &__descript {
         font-size: 1.6rem;
@@ -33,10 +61,18 @@
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: flex-end;
+        
+        @include breakpoint($laptop-bp) {
+            flex-basis: 75%;
+        }
     }
 
     &__img {
+        margin: 0 auto;
+    img{
         padding-bottom: 6rem;
-
+        padding-left: 1.5rem;
+        width: 75%;
     }
+}
 }

@@ -13,5 +13,28 @@
         letter-spacing: 0em;
 
         padding: 3.2rem 0;
+
+        @include breakpoint($laptop-bp) {
+            padding: 2.2rem 0;
+        }
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+
+        
     }
+
+    &__rights {
+        @include breakpoint($laptop-bp) {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        @include breakpoint($mobile-bp) {
+            margin: 2rem 0 2rem 0;
+
+        }
+    }
+    
 }

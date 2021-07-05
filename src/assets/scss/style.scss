@@ -1,9 +1,11 @@
 @import "vendor/reset.scss";
 @import "_vars.scss";
+@import "_mixins.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:wght@400;700&display=swap');
 
 html {
     font-size: 62.5%;
+
 }
 
 body {
@@ -13,9 +15,6 @@ body {
     color: $color-text;
     background: #FAFAFA;
 }
-
-
-
 
 
 /* Blocks */ 
@@ -30,3 +29,4 @@ body {
 @import "blocks/partners.scss";
 @import "blocks/contact.scss";
 @import "blocks/footer.scss";
+@import "blocks/burger.scss";

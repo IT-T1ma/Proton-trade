@@ -5,6 +5,15 @@
 
     &__content {
         flex-basis: 43%;
+        @include breakpoint($tablet-bp) {
+            text-align: center;
+            max-width: 80%;       
+        }
+        @include breakpoint($mobile-bp) {
+            text-align: center;
+            max-width: 100%;       
+        }
+
 
     }
     &__row {
@@ -13,21 +22,40 @@
         align-items: center;
 
         padding-bottom: 10rem;
+        @include breakpoint($tablet-bp) {
+            padding-bottom: 7rem;        
+        }
 
         &:nth-child(2) {
             flex-direction: row-reverse;
+            @include breakpoint($tablet-bp) {
+                flex-direction: column;         
+            }
+        }
+
+        @include breakpoint($tablet-bp) {
+            flex-direction: column;         
+        }
+
+        @include breakpoint($mobile-bp) {
+            padding-bottom: 5rem; 
+            
         }
     }
 
 
     &__heading {
-        font-family: Rubik;
         font-style: normal;
         font-weight: bold;
-        font-size: 4.2rem;
+        font-size: 4.7rem;
         line-height: 5rem;
        
         padding-bottom: 3.6rem;
+
+        @include breakpoint($mobile-bp) {
+            font-size: 4rem;
+            
+        }
     }
 
     &__title {
@@ -37,6 +65,11 @@
         line-height: 153%;
         
         padding-bottom: 1.2rem;
+
+        @include breakpoint($mobile-bp) {
+            font-size: 2rem;
+            
+        }
     }
 
     &__descript {
@@ -44,5 +77,14 @@
         font-weight: normal;
         font-size: 1.6rem;
         line-height: 2.4rem;
+
+        @include breakpoint($mobile-bp) {
+            font-size: 1.4rem;
+            
+        }
+    }
+
+    &__img img{
+       max-width: 28rem; 
     }
 }

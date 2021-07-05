@@ -1,11 +1,21 @@
 .advantages {
 
+
     &__row {
         display: flex;
         justify-content: space-between;
 
         position: relative;
         top: -10rem;
+        
+        @include breakpoint($tablet-bp) {
+            flex-wrap: wrap;
+        }
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+            
+        }
+
     }
 
     &__item {
@@ -17,6 +27,19 @@
         overflow: hidden;
 
         padding: 4.7rem 0 4.3rem 0;
+
+
+
+        @include breakpoint($tablet-bp) {      
+            flex-wrap: wrap;
+            flex-basis: 48%;
+            margin-bottom: 4%;    
+        }
+
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+            
+        }
     }
 
     &__value {
@@ -24,6 +47,10 @@
         font-size: 5.2rem;
         line-height: 7.8rem;
         color: $color-text;
+
+        @include breakpoint($laptop-bp) {
+            font-size: 4.2rem;
+        }
     }
 
     &__description {

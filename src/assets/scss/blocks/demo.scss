@@ -3,13 +3,39 @@
         background-blend-mode: overlay;
         position: relative;
 
+        @include breakpoint($tablet-bp) {
+            padding-bottom: 1rem;          
+        }
+
     &__subtitle {
         color: $white;
         padding-top: 9rem;
+
+        @include breakpoint($laptop-bp) {
+            padding-top: 5rem;
+        }
+
+        @include breakpoint($tablet-bp) {
+            font-size: 2.4rem;          
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 2rem;          
+        }
+
+        
     }
 
     &__title {
         color: $white;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 6rem;          
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 5rem;          
+        }
 
     }
 
@@ -20,11 +46,34 @@
         margin-top: 2rem;
         margin-bottom: 9rem;
 
+        @include breakpoint($laptop-bp) {
+            margin-bottom: 5rem;
+        }
+
+        img {
+            @include breakpoint($mobile-bp) {
+                width: 40px;        
+            }
+        }
+
     }
-    &__img {
+    &__img img{
+
         position: absolute;
         top: -85px;
         right: 30px;
+
+        @include breakpoint($laptop-bp) {
+            width: 33%;
+            right: 0;
+            top: -60px;
+        }
+
+        @include breakpoint($tablet-bp) {
+            width: 30%;
+            right: 0;
+            top: -70px;          
+        }
 }
 
 

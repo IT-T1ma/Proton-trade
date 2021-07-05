@@ -1,10 +1,32 @@
 .contact-us {
+        position: relative;
+
         padding-top: 10rem;
         padding-bottom: 12rem;
+
+        @include breakpoint($tablet-bp) {
+            padding-top: 5rem;
+            padding-bottom: 10rem;
+            
+        }
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
+
+        @include breakpoint($tablet-bp) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__caption {
+        @include breakpoint($tablet-bp) {
+            padding-bottom: 5rem;
+        }
+        @include breakpoint($mobile-bp) {
+            padding-bottom: 1rem;
+        }
     }
 
     &__title {
@@ -15,6 +37,10 @@
         letter-spacing: 0em;
 
         padding-bottom: 1.6rem;
+
+        @include breakpoint ($mobile-bp) {
+            font-size: 4rem;
+        }
     }
 
     &__descript {
@@ -26,7 +52,12 @@
     }
 
     &__form {
-        width: 66%; 
+        width: 66%;
+        
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+        }
+
     }
     input {
         background: #EDEEEF;
@@ -38,26 +69,48 @@
     &__name {
         display: inline-block;
         height: 6.5rem;
-        width: 37.6rem;
+        width: 48.5%;
 
-        margin-right: 1.9rem;
+        margin-right: 2%;
         padding-left: 2.4rem;
+
+        @include breakpoint($mobile-bp) {
+            display: block;
+            width: 100%;
+            padding-left: 1.4rem;
+
+        }
     }
 
     &__email {
         height: 6.5rem;
-        width: 37.6rem;
+        width: 48.5%;
         padding-left: 2.4rem;
+
+
+        @include breakpoint($mobile-bp) {
+            display: block;
+            width: 100%;
+            
+            margin-top: 1rem;
+            padding-left: 1.4rem;
+        }
 
     }
 
     &__text {
         margin-top: 2.4rem;
         height: 16.9rem;
-        width: 77.6rem;
+        width: 99.5%;
 
         padding-left: 2.4rem;
         padding-bottom: 10rem;
+
+        
+        @include breakpoint($mobile-bp) {
+            margin-top: 1rem;
+            padding-left: 1.4rem;
+        }
     }
    
 
@@ -71,10 +124,38 @@
 
         padding-top: 1.2rem;
         padding-bottom: 2.4rem;
+
+        @include breakpoint($tablet-bp) {
+            text-align: left;
+            
+        }
+    }
+
+    &__lift-btn {
+        position: absolute;
+        bottom: 7rem;
+        right: 4rem;
+
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 50%;
+        border: 2px solid #3355FF;
+
+        font-size: 4rem;
+        font-weight: bold;
+        color:#3355FF;
+        text-align: center;
+
+        @include breakpoint($tablet-bp) {
+            bottom: 2rem;
+            right: 2rem;
+            
+        }
     }
 
 .signup-button {
         padding: 1.6rem 6.4rem;
 }
+
 
 }
