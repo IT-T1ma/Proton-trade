@@ -1,0 +1,50 @@
+.successful-send {
+    display: none;
+    text-align: center;
+
+    padding-bottom: 14rem;
+    padding-top: 14rem;
+
+    @include breakpoint($mobile-bp) {
+        padding-bottom: 7rem;
+        padding-top: 5rem;
+        
+    }
+
+    &__img {
+        padding-bottom: 4rem;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.2rem;
+        line-height: 5rem;
+        color: #343A40;
+
+        padding-bottom: 4rem;
+
+        @include breakpoint($mobile-bp) {
+            font-size: 2.5rem;
+            
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #FFFFFF;
+        background: #3355FF;
+        border-radius: 4px;
+
+        text-transform: uppercase;
+        margin: auto;
+
+        padding: 1.8rem 8.7rem;
+    
+            &:hover {
+            background: #1631B6;
+        }
+    }
+}

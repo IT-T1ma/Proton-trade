@@ -1,5 +1,6 @@
 .burger {
     display: none;
+    z-index: 2;
     width: 3.4rem;
     height: 2.6rem;
 
@@ -76,5 +77,42 @@
     }
 
     }
-    
+
 }
+
+.burger-menu {
+    position: fixed;
+    z-index: 1;
+    background: #E5E5E5;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    &__nav {
+        
+        text-align: center;
+        margin: auto;
+    }
+
+    &__list {      
+        
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #343A40;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 88px;
+
+        margin-top: 4rem;
+    &:hover {
+        color: #3355FF;
+    }
+
+    }
+}
+
+
