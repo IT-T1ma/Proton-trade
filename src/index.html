@@ -29,17 +29,17 @@ title: Proton Trade
         <nav class="burger-menu__nav">
             <ul class="burger-menu__list">
                 <li>
-                    <a class="burger-menu__link" href="#" >
+                    <a class="burger-menu__link" href="#capabilities" >
                         Наши возможности
                     </a>
                 </li>
                 <li >
-                    <a class="burger-menu__link" href="#">
+                    <a class="burger-menu__link" href="#you-get">
                         Что вы получаете
                     </a>
                 </li>
                 <li>
-                    <a class="burger-menu__link" href="#">
+                    <a class="burger-menu__link" href="#partners">
                         Партнеры
                     </a>
                 </li>
@@ -62,21 +62,20 @@ title: Proton Trade
                     <div class="advantages__value">>$214Bn</div>
                     <div class="advantages__description">Объем за 24ч</div>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item" >
                     <div class="advantages__value">61,1%</div>
-                    <div class="advantages__description">BTC Dominance</div>
+                    <div id="capabilities" class="advantages__description">BTC Dominance</div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="capabilities">
-        <div class="container">
-                
+        <div class="container">        
             <div class="capabilities__cards">
                 <div class="capabilities__heading">Наши возможности</div>
                 <div class="capabilities__item">
-                    <div class="capabilities__img"><img src="assets/images/capabilities/1.svg" alt=""></div>
+                    <div class="capabilities__img"><img id="capabilities" src="assets/images/capabilities/1.svg" alt=""></div>
                     <div class="capabilities__title">Покажем тренды</div>
                     <div class="capabilities__descript">Робот-помощник анализирует актив и дает рекомендации по направлению торговли на нескольких таймфреймах: H1, М30 и М15
                     </div>
@@ -119,7 +118,7 @@ title: Proton Trade
         </div>
     </div> 
 
-    <div class="you-get">
+    <div class="you-get" id="you-get">
         <div class="container">
             <div class="you-get__row">
                 <div class="you-get__content">
@@ -167,7 +166,7 @@ title: Proton Trade
         </div>
     </div>
 
-    <div class="partners">
+    <div class="partners" id="partners">
         <div class="container">
             <div class="partners__wrapper">
                 <div class="partners__caption">
@@ -212,11 +211,11 @@ title: Proton Trade
                         <input class="contact-us__text" type="text" placeholder="Сообщение" required>
                         <p class="contact-us__info">Нажимая на кнопку «Отправить вопрос», вы даете согласие на обработку персональных данных.</p>
                         <button href="#" class="contact-us__button signup-button" type="submit">Отправить вопрос</button>
-                    </form>   
-                </div>
-                <div class="contact-us__lift-btn">
-                    &uarr;
-                </div>
+                    </form>
+
+                    <a class="contact-us__lift-btn lift" href="#top">
+                        &uarr;
+                    </a>    
             </div>
         </div>
     </div>
