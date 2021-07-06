@@ -6,6 +6,11 @@ const burgerTrigger = document.querySelector('.burger'),
       header = document.querySelector('.header'),
       burgerMenuLink = document.querySelectorAll('.burger-menu__link');
 
+    function hide () {
+        mainScreen.classList.toggle('hide');
+        header.classList.toggle('hide');
+    }
+
     burgerTrigger.addEventListener('click', ()=> {
         burgerTrigger.classList.toggle('active');
 
@@ -14,12 +19,8 @@ const burgerTrigger = document.querySelector('.burger'),
         } else {
             document.body.style.overflow = "";
         }
-
-        mainScreen.classList.toggle('hide');
-        header.classList.toggle('hide');
-
-        mainScreen.classList.toggle('show');
-        header.classList.toggle('show');
+        hide();
+        
     });
        
     for (let item of burgerMenuLink) {
@@ -27,12 +28,7 @@ const burgerTrigger = document.querySelector('.burger'),
             if(item) {
                 burgerTrigger.classList.toggle('active');
                 document.body.style.overflow = "";
-                mainScreen.classList.toggle('hide');
-                header.classList.toggle('hide');
-                mainScreen.classList.toggle('show');
-                header.classList.toggle('show');
-            } else {
-                console.log('none');
-            }
+                hide();
+            } 
         });     
     }        
