@@ -78,7 +78,7 @@
             <div class="burger">
                 <span>Открыть навигацию</span>
             </div>
-            
+        
             <div class="burger-menu">  
                 <nav class="burger-menu__nav">
                     <ul class="burger-menu__list">
@@ -261,11 +261,11 @@
                         </div>
                         <div class="contact-us__form">
                             <form action="">
-                                <input  class="contact-us__name" type="text" placeholder="Имя">
-                                <input class="contact-us__email" type="text" placeholder="Email">
-                                <input class="contact-us__text" type="text" placeholder="Сообщение">
+                                <input  class="contact-us__name" type="text" placeholder="Имя" required>
+                                <input class="contact-us__email" type="text" placeholder="Email" required>
+                                <input class="contact-us__text" type="text" placeholder="Сообщение" required>
                                 <p class="contact-us__info">Нажимая на кнопку «Отправить вопрос», вы даете согласие на обработку персональных данных.</p>
-                                <a href="#" class="contact-us__button signup-button" type="submit">Отправить вопрос</a>
+                                <button href="#" class="contact-us__button signup-button" type="submit">Отправить вопрос</button>
                             </form>   
                         </div>
                         <div class="contact-us__lift-btn">
@@ -273,7 +273,15 @@
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
+            
+            <div class="successful-send">
+                <div class="container">
+                    <img src="assets/images/successful.svg" class="successful-send__img"></img>
+                    <div class="successful-send__title">Ваше сообщение успешно отправлено</div> 
+                    <div class="successful-send__button">Ok</div>
+                </div>    
+            </div> 
         
         </main>
 
