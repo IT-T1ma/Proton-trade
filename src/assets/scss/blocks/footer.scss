@@ -22,11 +22,20 @@
             text-align: center;
         }
         
-
-        
     }
 
     &__rights {
+
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.5s;
+
+        &._active {
+       
+            opacity: 1;     
+            transform: scale(1);      
+        }
+
         @include breakpoint($laptop-bp) {
             margin-left: 2rem;
             margin-right: 2rem;
@@ -36,5 +45,29 @@
 
         }
     }
-    
+
+
+    &__agreement {
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1s;
+
+        &._active {     
+        opacity: 1;     
+        transform: scale(1);      
+        }
+    }
+
+
+    &__mail {
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.9s;
+
+        &._active {  
+        opacity: 1;     
+        transform: scale(1);      
+        }
+    }
 }
+

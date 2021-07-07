@@ -389,6 +389,18 @@ body {
 
 .main-screen__title {
     padding-bottom: 0.5rem;
+    -webkit-transform: translate(0px, 120%);
+    transform: translate(0px, 120%);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: 2s;
+}
+
+.main-screen__title._active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .main-screen__description {

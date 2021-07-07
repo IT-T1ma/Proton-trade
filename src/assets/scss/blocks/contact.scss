@@ -38,6 +38,17 @@
 
         padding-bottom: 1.6rem;
 
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.4s;
+        margin-left: -100%;
+
+    &._active { 
+            margin-left: 0;       
+            opacity: 1;     
+            transform: scale(1);      
+        }
+
         @include breakpoint ($mobile-bp) {
             font-size: 4rem;
         }
@@ -49,10 +60,30 @@
         font-weight: 400;
         line-height: 2.4rem;
         letter-spacing: 0em;
+
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.6s;
+        margin-left: -100%;
+
+        &._active {
+            margin-left: 0;        
+            opacity: 1;     
+            transform: scale(1);      
+        }
     }
 
     &__form {
         width: 66%;
+
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.6s;
+
+        &._active {
+            opacity: 1;     
+            transform: scale(1);      
+        }
         
         @include breakpoint($tablet-bp) {
             width: 100%;
@@ -73,6 +104,8 @@
 
         margin-right: 2%;
         padding-left: 2.4rem;
+
+
 
         @include breakpoint($mobile-bp) {
             display: block;
@@ -106,7 +139,6 @@
         padding-left: 2.4rem;
         padding-bottom: 10rem;
 
-        
         @include breakpoint($mobile-bp) {
             margin-top: 1rem;
             padding-left: 1.4rem;
@@ -133,7 +165,7 @@
 
     &__lift-btn {
         position: absolute;
-        bottom: 7rem;
+      
         right: 4rem;
 
         width: 4.8rem;
@@ -149,8 +181,12 @@
         
         
         @include breakpoint($tablet-bp) {
-            bottom: 2rem;
             right: 2rem;
+            
+        }
+        @include breakpoint($mobile-bp) {
+            right: 0;
+            bottom: -7rem;
             
         }
     }

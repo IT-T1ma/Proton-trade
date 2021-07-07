@@ -5,6 +5,18 @@
 
     &__content {
         flex-basis: 43%;
+
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.2s;
+        margin-left: -50%;
+
+        &._active {  
+            margin-left: 0;      
+            opacity: 1;     
+            transform: scale(1);      
+        }
+
         @include breakpoint($tablet-bp) {
             text-align: center;
             max-width: 80%;       
@@ -22,6 +34,7 @@
         align-items: center;
 
         padding-bottom: 10rem;
+
         @include breakpoint($tablet-bp) {
             padding-bottom: 7rem;        
         }
@@ -84,7 +97,19 @@
         }
     }
 
-    &__img img{
-       max-width: 28rem; 
+    &__img {
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.2s;
+        margin-right: -50%;
+
+        &._active { 
+            margin-right: 0;       
+            opacity: 1;     
+            transform: scale(1);      
+        }
+        img{
+        max-width: 28rem; 
     }
+}
 }

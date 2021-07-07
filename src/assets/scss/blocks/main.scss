@@ -4,6 +4,16 @@
 
     &__title {
         padding-bottom: 0.5rem;
+
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.4s;
+
+    &._active {        
+            opacity: 1;     
+            transform: scale(1);      
+        }
     }
 
     &__description {
@@ -12,6 +22,16 @@
         letter-spacing: 0.01em;
 
         padding-bottom: 6.2rem;
+
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.8s;
+
+        &._active {        
+            opacity: 1;     
+            transform: scale(1);      
+        }
 
         @include breakpoint($tablet-bp) {
             padding-bottom: 15rem;
@@ -25,7 +45,17 @@
     }
 
     &__subtitle {      
-            padding: 18.2rem 0 1rem 0;
+        padding: 18.2rem 0 1rem 0;
+
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.4s;
+
+        &._active {        
+            opacity: 1;     
+            transform: scale(1);      
+        }
 
         @include breakpoint($tablet-bp) {
             padding: 10.2rem 0 1rem 0;
@@ -34,6 +64,15 @@
     }
 
     &__button {
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.8s;
+
+        &._active {        
+            opacity: 1;     
+            transform: scale(1);      
+        }
+
         @include breakpoint($tablet-bp) {
             width: 100%;
             
@@ -46,8 +85,8 @@
     }
 
     &__signup {
-            display: flex;
-            align-items: center;
+        display: flex;
+        align-items: center;
 
         @include breakpoint($tablet-bp) {
             flex-direction: column;
@@ -56,9 +95,16 @@
         }
 
     }
-
-
     &__statistics {
+        opacity: 0;
+        transform: scale(0); 
+        transition: 1.8s;
+
+        &._active {        
+            opacity: 1;     
+            transform: scale(1);      
+        }
+
         img {
             width: 3.8rem;
             height: 2.4rem;

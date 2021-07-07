@@ -98,6 +98,18 @@ eval("\r\n\r\nconst anchors = document.querySelectorAll('.lift[href*=\"#\"]');\r
 
 /***/ }),
 
+/***/ "./src/assets/js/animate.js":
+/*!**********************************!*\
+  !*** ./src/assets/js/animate.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\n\r\nconst animItems = document.querySelectorAll('.anim-items');\r\n\r\nif (animItems.length > 0) {\r\n    window.addEventListener('scroll', animOnScroll);\r\n\r\n    function animOnScroll() {\r\n        for (let i = 0; i < animItems.length; i++) {\r\n            const animItem = animItems[i];\r\n            const animItemHeight = animItem.offsetHeight;\r\n            const animItemOffset = offset(animItem).top;\r\n            const animStart = 4;\r\n\r\n            let animItemPoint = window.innerHeight - animItemHeight / animStart;\r\n\r\n            if (animItemHeight > window.innerHeight) {\r\n                animItemPoint = window.innerHeight - window.innerHeight / animStart;\r\n\r\n            }\r\n\r\n            if ((window.pageYOffset > animItemOffset - animItemPoint) && window.pageYOffset < (animItemOffset + animItemHeight)) {\r\n                animItem.classList.add('_active');\r\n\r\n            } else {\r\n                if (animItem.classList.contains('.anim-no-hide')) {\r\n                    animItem.classList.remove('_active');\r\n                }\r\n\r\n\r\n            }\r\n        }\r\n    }\r\n\r\n    function offset(el) {\r\n        const rect = el.getBoundingClientRect(),\r\n            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,\r\n            scrollTop = window.pageYOffset || document.documentElement.scrollTop;\r\n        return {\r\n            top: rect.top + scrollTop,\r\n            left: rect.left + scrollLeft\r\n        };\r\n    }\r\n    setTimeout(() => {\r\n        animOnScroll();\r\n    }, 300);\r\n\r\n}\n\n//# sourceURL=webpack:///./src/assets/js/animate.js?");
+
+/***/ }),
+
 /***/ "./src/assets/js/burger-menu.js":
 /*!**************************************!*\
   !*** ./src/assets/js/burger-menu.js ***!
@@ -123,13 +135,13 @@ eval("\r\n\r\nconst hideForm = document.querySelector('.contact-us'),\r\n      f
 /***/ }),
 
 /***/ 0:
-/*!*****************************************************************************************************!*\
-  !*** multi ./src/assets/js/anchors.js ./src/assets/js/burger-menu.js ./src/assets/js/successful.js ***!
-  \*****************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** multi ./src/assets/js/anchors.js ./src/assets/js/animate.js ./src/assets/js/burger-menu.js ./src/assets/js/successful.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\Тіма\\Desktop\\Proton-trade\\src\\assets\\js\\anchors.js */\"./src/assets/js/anchors.js\");\n__webpack_require__(/*! C:\\Users\\Тіма\\Desktop\\Proton-trade\\src\\assets\\js\\burger-menu.js */\"./src/assets/js/burger-menu.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Тіма\\Desktop\\Proton-trade\\src\\assets\\js\\successful.js */\"./src/assets/js/successful.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/anchors.js_./src/assets/js/burger-menu.js_./src/assets/js/successful.js?");
+eval("__webpack_require__(/*! C:\\Users\\Тіма\\Desktop\\Proton-trade\\src\\assets\\js\\anchors.js */\"./src/assets/js/anchors.js\");\n__webpack_require__(/*! C:\\Users\\Тіма\\Desktop\\Proton-trade\\src\\assets\\js\\animate.js */\"./src/assets/js/animate.js\");\n__webpack_require__(/*! C:\\Users\\Тіма\\Desktop\\Proton-trade\\src\\assets\\js\\burger-menu.js */\"./src/assets/js/burger-menu.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Тіма\\Desktop\\Proton-trade\\src\\assets\\js\\successful.js */\"./src/assets/js/successful.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/anchors.js_./src/assets/js/animate.js_./src/assets/js/burger-menu.js_./src/assets/js/successful.js?");
 
 /***/ })
 

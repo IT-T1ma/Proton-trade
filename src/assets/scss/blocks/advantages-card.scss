@@ -1,6 +1,4 @@
 .advantages {
-
-
     &__row {
         display: flex;
         justify-content: space-between;
@@ -27,6 +25,27 @@
         overflow: hidden;
 
         padding: 4.7rem 0 4.3rem 0;
+
+        opacity: 0;
+        transform: scale(0); 
+        
+        &:nth-child(1) {
+            transition: 1s;
+        }
+        &:nth-child(2) {
+            transition: 1.3s;
+        }
+        &:nth-child(3) {
+            transition: 1.6s;
+        }
+        &:nth-child(4) {
+            transition: 1.9s;
+        }
+
+        &._active {        
+            opacity: 1;     
+            transform: scale(1);      
+        }
 
 
 

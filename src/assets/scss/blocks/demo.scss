@@ -3,6 +3,16 @@
         background-blend-mode: overlay;
         position: relative;
 
+        opacity: 0;
+        margin-left: -100%;
+        transition: 1s;
+
+    &._active {
+        margin-left: 0;      
+        opacity: 1;     
+        
+    }
+
         @include breakpoint($tablet-bp) {
             padding-bottom: 1rem;          
         }
